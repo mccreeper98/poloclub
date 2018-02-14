@@ -1,0 +1,6 @@
+[08-Feb-2018 22:32:25 Etc/GMT] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
+[08-Feb-2018 22:35:24 Etc/GMT] PHP Warning:  mysql_connect(): Access denied for user 'residvfn_b'@'localhost' (using password: YES) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
+[08-Feb-2018 22:35:47 Etc/GMT] PHP Warning:  mysql_connect(): Access denied for user 'residvfn_b'@'localhost' (using password: YES) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
+[08-Feb-2018 22:37:40 Etc/GMT] PHP Warning:  mysql_connect(): Can't connect to MySQL server on '11.62.0.27' (4) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
+[08-Feb-2018 22:40:21 Etc/GMT] PHP Warning:  mysql_connect(): Can't connect to MySQL server on '11.62.0.27' (4) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
+[09-Feb-2018 03:28:23 Etc/GMT] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/residvfn/public_html/Sitio_Nuevo/conex.php on line 7
