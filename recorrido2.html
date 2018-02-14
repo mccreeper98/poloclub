@@ -39,7 +39,11 @@
           <a href="master-plan.html"><div class="col l2 navtext hvr-bubble-bottom">Master Plan</div></a>
           <a href="vinedos-del-polo.html"><div class="col l2 navtext hvr-bubble-bottom">Viñedos del polo</div></a>
           <a href="albacara.html"><div class="col l2 navtext hvr-bubble-bottom">Albacara</div></a>
-          <a href="#"><div class="col l2 navtext hvr-bubble-bottom">Recorrido Virtual</div></a>
+          <a class='dropdown-button col l2 navtext' href='#' data-activates='dropdown1'>Recorrido Virtual</a>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="recorrido1.html" id="droptext" class="center navtext" >Casa Uno</a></li>
+            <li><a href="#!" id="droptext" class="center navtext">Casa Dos</a></li>
+          </ul>
           <a href="blog.php"><div class="col l1 navtext hvr-bubble-bottom">Blog</div></a>
           <a href="contacto.html"><div class="col l2 navtext hvr-bubble-bottom">Contacto</div></a>
         </div>
@@ -47,7 +51,7 @@
 
       <main class="center" style="padding-bottom: 150px; padding-top: 100px">
       	
-      	<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffederacionmexicanadepolo%2Fvideos%2F909778372520786%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+      	<iframe width='853' height='480' src='https://my.matterport.com/show/?m=ZSiaKMUuY9H' frameborder='0' allowfullscreen allow='vr'></iframe>
 
       </main>
       <!--Footer -->
@@ -69,5 +73,22 @@
       </div>
     </footer>
   <!--Footer-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+      
+
+      $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: true, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+    </script>
 </body>
 </html>

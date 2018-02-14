@@ -39,7 +39,11 @@
           <a href="master-plan.html"><div class="col l2 navtext hvr-bubble-bottom">Master Plan</div></a>
           <a href="vinedos-del-polo.html"><div class="col l2 navtext hvr-bubble-bottom">Viñedos del polo</div></a>
           <a href="albacara.html"><div class="col l2 navtext hvr-bubble-bottom">Albacara</div></a>
-          <a href="recorrido.html"><div class="col l2 navtext hvr-bubble-bottom">Recorrido Virtual</div></a>
+          <a class='dropdown-button col l2 navtext' href='#' data-activates='dropdown1'>Recorrido Virtual</a>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="recorrido1.html" id="droptext" class="center navtext" >Casa Uno</a></li>
+            <li><a href="recorrido2.html" id="droptext" class="center navtext">Casa Dos</a></li>
+          </ul>
           <a href="blog.php"><div class="col l1 navtext hvr-bubble-bottom">Blog</div></a>
           <a href="#"><div class="col l2 navtext hvr-bubble-bottom">Contacto</div></a>
         </div>
@@ -121,6 +125,21 @@
           $('.parallax').parallax();
         });
       </script>
+      <script>
+      
+
+      $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: true, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+    </script>
 
 </body>
 </html>

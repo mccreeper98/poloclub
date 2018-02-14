@@ -33,17 +33,26 @@
     <img src="img/logowhite.svg" alt="" id="headerlogo">
   </div>
 
+  <div class="menu">
   <div id="nav" class="row">
-    <div class="container center light" style="height: 100%;">
+    <div class="container center light " style="height: 100%;">
+          
           <a href="#"><div class="col l1 navtext hvr-bubble-bottom" hovered>Inicio</div></a>
           <a href="master-plan.html"><div class="col l2 navtext hvr-bubble-bottom">Master Plan</div></a>
           <a href="vinedos-del-polo.html"><div class="col l2 navtext hvr-bubble-bottom">Viñedos del polo</div></a>
           <a href="albacara.html"><div class="col l2 navtext hvr-bubble-bottom">Albacara</div></a>
-          <a href="recorrido.html"><div class="col l2 navtext hvr-bubble-bottom">Recorrido Virtual</div></a>
+          <a class='dropdown-button col l2 navtext' href='#' data-activates='dropdown1'>Recorrido Virtual</a>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="recorrido1.html" id="droptext" class="center navtext" >Casa Uno</a></li>
+            <li><a href="recorrido2.html" id="droptext" class="center navtext">Casa Dos</a></li>
+          </ul>
           <a href="blog.php"><div class="col l1 navtext hvr-bubble-bottom">Blog</div></a>
           <a href="contacto.html"><div class="col l2 navtext hvr-bubble-bottom">Contacto</div></a>
         </div>
+
   </div>
+   </div>
+  
   
   <main>
     <div class="center" style="margin-bottom: 100px; margin-top: 100px;">
@@ -65,8 +74,9 @@
 
     <div class="center container" style="padding-top: 100px; padding-bottom: 100px">
       <p style="color: #7fb223" class="wow fadeInLeft">____________________________</p>
-      <h4 style="font-family: 'Abel', sans-serif;" align="left">Residencial Polo Club El Marqués es el primer desarrollo Country Club en su tipo que comprende de dos canchas de polo, viñedos, canchas de tenis y padel, casa club y spa, canal de ski y remo, golf range, pista ecuestre, lagos artificiales, área de eventos sociales, muelle para pesca y zona de playa.
-      Esto con la intención de tener una calidad de vida por encima de cualquier fraccionamiento.</h4>
+      <h4 style="font-family: 'Abel', sans-serif;" align="left">Residencial Polo Club El Marqués es el primer desarrollo Country Club en su tipo que comprende de dos canchas de polo, viñedos, canchas de tenis y padel, casa club y spa, canal de ski y remo, golf range, pista ecuestre, lagos artificiales, área de eventos sociales, muelle para pesca y zona de playa.</h4>
+      <h4 style="font-family: 'Abel', sans-serif;" align="left">
+      Esto con la intención de tener una calidad de vida por encima de cualquier fraccionamiento.</h4> 
       <p style="color: #7fb223" class="wow fadeInLeft">____________________________</p>
     </div>
 
@@ -334,6 +344,33 @@
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+
+      $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: true, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
     </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  var altura = $('.menu').offset().top;
+  
+  $(window).on('scroll', function(){
+    if ( $(window).scrollTop() > altura ){
+      $('.menu').addClass('menu-fixed');
+    } else {
+      $('.menu').removeClass('menu-fixed');
+    }
+  });
+ 
+});
+    </script>
+
   </body>
   </html>
