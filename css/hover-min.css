@@ -2673,7 +2673,6 @@
    border: 1px solid #000;
   border-width: 10px 10px 0 10px;
   border-color: #fff transparent transparent transparent;
-  box-shadow: 0px 1px 0px #ccc ;
 }
 .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
   -webkit-transform: translateY(10px);

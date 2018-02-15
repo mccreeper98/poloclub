@@ -33,21 +33,26 @@
         <img src="img/logowhite.svg" alt="" id="headerlogo">
       </div>
 
-      <div id="nav" class="row">
-        <div class="container center light" style="height: 100%;">
-          <a href="index.html"><div class="col l1 navtext hvr-bubble-bottom" hovered>Inicio</div></a>
-          <a href="master-plan.html"><div class="col l2 navtext hvr-bubble-bottom">Master Plan</div></a>
-          <a href="vinedos-del-polo.html"><div class="col l2 navtext hvr-bubble-bottom">Viñedos del polo</div></a>
-          <a href="albacara.html"><div class="col l2 navtext hvr-bubble-bottom">Albacara</div></a>
-          <a class='dropdown-button col l2 navtext' href='#' data-activates='dropdown1'>Recorrido Virtual</a>
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="recorrido1.html" id="droptext" class="center navtext" >Casa Uno</a></li>
-            <li><a href="recorrido2.html" id="droptext" class="center navtext">Casa Dos</a></li>
-          </ul>
-          <a href="blog.php"><div class="col l1 navtext hvr-bubble-bottom">Blog</div></a>
-          <a href="#"><div class="col l2 navtext hvr-bubble-bottom">Contacto</div></a>
+      <div class="menu">
+        <div  id="nav" class="row">
+          <div  class="container center light " style="height: 100%;">
+            
+            <a href="#"><div class="col l1 navtext hvr-bubble-bottom" hovered>Inicio</div></a>
+            <a href="master-plan.html"><div class="col l2 navtext hvr-bubble-bottom">Master Plan</div></a>
+            <a href="vinedos-del-polo.html"><div class="col l2 navtext hvr-bubble-bottom">Viñedos del polo</div></a>
+            <a href="albacara.html"><div class="col l2 navtext hvr-bubble-bottom">Albacara</div></a>
+            <a class='dropdown-button col l2 navtext' href='#' data-activates='dropdown1'>Recorrido Virtual</a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="recorrido1.html" id="droptext" class="center navtext" >Casa Uno</a></li>
+              <li><a href="recorrido2.html" id="droptext" class="center navtext">Casa Dos</a></li>
+            </ul>
+            <a href="blog.php"><div class="col l1 navtext hvr-bubble-bottom">Blog</div></a>
+            <a href="contacto.html"><div class="col l2 navtext hvr-bubble-bottom">Contacto</div></a>
+          </div>
+
         </div>
       </div>
+    </div>
 
       <main>
       	
@@ -56,20 +61,20 @@
               <div class="col s12 m6 l6" style="padding-top: 50px;">
               <h4 class="header">Teléfonos de Contacto</h4>
 
-              <p style="padding-top: 50px; font-family: 'Abel', sans-serif; font-size:x-large">(442)253-0203</p>
-              <p style="font-family: 'Abel', sans-serif; font-size:x-large">(442109-5849)</p>
-              <p style="font-family: 'Abel', sans-serif; font-size:x-large">(55)2690-1218</p>
-              <p style="font-family: 'Abel', sans-serif; font-size:x-large">(55)1408-6072</p>
+              <span style="padding-top: 50px; font-family: 'Abel', sans-serif; font-size:x-large"> (442)253-0203</span><br>
+              <span style="font-family: 'Abel', sans-serif; font-size:x-large"> (442)109-5849</span><br>
+              <span style="font-family: 'Abel', sans-serif; font-size:x-large">(55)2690-1218</span><br>
+              <span style="font-family: 'Abel', sans-serif; font-size:x-large">(55)1408-6072</span><br>
               <h4 style="padding-top: 50px;">Correo electrónico</h4>
-              <p style="padding-top: 50px; font-family: 'Abel', sans-serif; font-size:x-large">ventas@elmarquespolo.com</p>
+              <p style="padding-top: 20px; font-family: 'Abel', sans-serif; font-size:x-large">ventas@elmarquespolo.com</p>
               <h4 style="padding-top: 50px;">Ubicación</h4>
-              <p style="padding-top: 50px; font-family: 'Abel', sans-serif; font-size:x-large">Carretera estatal 500</p>
-              <p style="font-family: 'Abel', sans-serif; font-size:x-large">Coyotillos - Chichimequillas</p>
-              <p style="font-family: 'Abel', sans-serif; font-size:x-large">km 7 El Marqués. Querétaro.</p>
+              <span style="padding-top: 20px; font-family: 'Abel', sans-serif; font-size:x-large">Carretera estatal 500</span> <br>
+              <span style="font-family: 'Abel', sans-serif; font-size:x-large">Coyotillos - Chichimequillas</span> <br>
+              <span style="font-family: 'Abel', sans-serif; font-size:x-large">km 7 El Marqués. Querétaro.</span> <br>
               </div>
               <div class="col s12 m6 l6" style="padding-top: 50px;">
-                <h4>Conoce más del Residencial</h4>
-                <p style="padding-top: 50px; font-family: 'Abel', sans-serif; font-size:x-large">Llena el siguiente formulario y un agente se pondrá en contacto contigo.</p>
+                <h3 style="font-size: 2.2rem;">Conoce más del Residencial</h3>
+                <p style="padding-top: 20px; font-family: 'Abel', sans-serif; font-size:x-large">Llena el siguiente formulario y un agente se pondrá en contacto contigo.</p>
 
                 <form>
                   <input type="text" name="nombre" placeholder="Nombre Completo">
@@ -81,7 +86,7 @@
                   <input type="tel" name="telefono" placeholder="Celular">
                   <br>
                   <br>
-                  <textarea placeholder="Mensaje" style="height: 100px;"></textarea>
+                  <textarea class="materialize-textarea" placeholder="Mensaje" style="height: 100px;"></textarea>
                   <br>
                   <br>
                   <div class="btn-large " id="infobtn">SOLICITAR INFORMACIÓN</div>
@@ -139,6 +144,36 @@
       stopPropagation: false // Stops event propagation
     }
   );
+    </script>
+
+        </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  var altura = $('.menu').offset().top;
+  
+  $(window).on('scroll', function(){
+    if ( $(window).scrollTop() > altura ){
+      $('.menu').addClass('menu-fixed');
+      $('.parallax-container').addClass('blurparallax');
+      
+    } else {
+      $('.menu').removeClass('menu-fixed');
+       $('.parallax-container').removeClass('blurparallax');
+    }
+  });
+ 
+
+   var altura2 = $('.parallax-container').offset().top;
+  
+  $(window).on('scroll', function(){
+    if ( $(window).scrollTop() > altura2 ){
+      $('.parallax-container').addClass('blurparallax');
+      
+    } else {
+       $('.parallax-container').removeClass('blurparallax');
+    }
+  });
+});
     </script>
 
 </body>
