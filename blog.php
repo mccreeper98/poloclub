@@ -67,7 +67,7 @@
 	<main>
 		<div class="row">
 			<div class="container">
-			<div class="col s12"><h4 class="animated fadeIn" style="margin-left: 10px">Ultimas entradas:</h4></div>
+			<div class="col s12"><h4 class="animated fadeIn" style="margin-left: 10px; color: #595454;">Ultimas entradas:</h4></div>
 
 			<div class="col s12 m12 l8" id="entradas">
 				<?php 
@@ -80,7 +80,7 @@
 			<!--FB Page -->
 			<div class="col s12 m12 l4 center" >
 				<hr>
-				<h5 class="animated fadeIn">Nosotros en Facebook:</h5>
+				<h5 class="animated fadeIn" style="color: #595454;">Nosotros en Facebook:</h5>
 
 				<div class="fb-page" data-href="https://www.facebook.com/RESIDENCIAL.POLO.CLUB.EL.MARQUES/" data-tabs="timeline" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/RESIDENCIAL.POLO.CLUB.EL.MARQUES/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RESIDENCIAL.POLO.CLUB.EL.MARQUES/"></a></blockquote></div>
 			</div>

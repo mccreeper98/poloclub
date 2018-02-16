@@ -6,8 +6,10 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/hover-min.css">
@@ -55,52 +57,73 @@
   
   
   <main>
-    <div class="center" style="margin-bottom: 100px; margin-top: 100px;">
-      <h4>“Aquí toda la semana es Fin de Semana”</h4>
+    <div class="center" style="margin-bottom: 110px; margin-top: 110px;">
+      <h4 style="color: #595454; font-size: 38px">“Aquí toda la semana es Fin de Semana”</h4>
     </div>
 
     <div id="terrenos" class="center">
       <div id="terrenoscontent">
         <h2 style="color: white; font-family: 'Playfair Display SC', serif;">Terrenos Residenciales en Venta</h2>
         <br>
-        <div class="btn-large" id="terrenosbtn">COMPRA AHORA TU TERRENO EN QUERÉTARO</div>
+        <br>  
+        <!-- Modal Trigger -->
+        <a class=" modal-trigger" href="#modal1"><div class="btn-large" id="terrenosbtn" style="font-family: 'PT Sans', sans-serif; font-size: 18px">COMPRA AHORA TU TERRENO EN QUERÉTARO</div></a>
       </div>
     </div>
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" style="background-color: white">
+      <p style="font-size: 26px; line-height: 70%; font-family: 'Abel', sans-serif;"> Contacto Ventas </p>
+      <hr style="width: 100%"> 
+      <p style="font-family: 'PT Sans', sans-serif; line-height: 230%; font-size: 20px">Llena el formulario para que uno de nuestro agentes se comunique inmediatamente.</p>
+      <form style="font-family: 'PT Sans', sans-serif;" action="enviarcorreo.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre Completo">
+        <input type="email" name="correo" placeholder="Email">
+        <input type="tel" name="telefono" placeholder="Celular">
+        <textarea name="msg" placeholder="Mensaje" style="height: 80px"></textarea>
+        <br>       
+        <input type="submit" name="enviar" value="SOLICITAR INFORMACIÓN" class="btn" id="modc">
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn" id="modc">Cerrar</a>
+    </div>
+  </div>
+
     <div class="center" style="background-color:  rgba(255,246,229,0.74); padding-top: 100px; padding-bottom: 100px">
-      <h3>UN FRACCIONAMIENTO RESIDENCIAL <br>
+      <h3 style="font-size: 38px; line-height: 150%; " >UN FRACCIONAMIENTO RESIDENCIAL <br>
       QUE SUPERA TUS EXPECTATIVAS</h3>
     </div>
 
     <div class="center container" style="padding-top: 100px; padding-bottom: 100px">
-      <p style="color: #7fb223" class="wow fadeInLeft">____________________________</p>
-      <h4 style="font-family: 'Abel', sans-serif;" align="left">Residencial Polo Club El Marqués es el primer desarrollo Country Club en su tipo que comprende de dos canchas de polo, viñedos, canchas de tenis y padel, casa club y spa, canal de ski y remo, golf range, pista ecuestre, lagos artificiales, área de eventos sociales, muelle para pesca y zona de playa.</h4>
-      <h4 style="font-family: 'Abel', sans-serif;" align="left">
+      <p style="color: #7fb223" class="wow fadeInLeft"><b><b>  ____________________________</b></b></p>
+      <h4 style="font-family: 'Abel', sans-serif; color: #595454; font-size: 27px; line-height: 150%" align="justify">Residencial Polo Club El Marqués es el primer desarrollo Country Club en su tipo que comprende de dos canchas de polo, viñedos, canchas de tenis y padel, casa club y spa, canal de ski y remo, golf range, pista ecuestre, lagos artificiales, área de eventos sociales, muelle para pesca y zona de playa.</h4>
+      <h4 style="font-family: 'Abel', sans-serif; color: #595454; font-size: 27px; line-height: 150%" align="justify">
       Esto con la intención de tener una calidad de vida por encima de cualquier fraccionamiento.</h4> 
-      <p style="color: #7fb223" class="wow fadeInLeft">____________________________</p>
+      <p style="color: #7fb223" class="wow fadeInLeft"><b>____________________________</b></p>
     </div>
 
-    <div class="row"  style="background-color:  rgba(255,246,229,0.74); padding-top: 100px; padding-bottom: 100px">
+    <div class="row"  style="background-color:  rgba(255,246,229,0.74); padding-top: 50px; padding-bottom: 50px">
       <div class="container">
         <div class="col l6 m6 s12">
           <img src="img/vivir.jpg" class="responsive-img marco wow slideInLeft z-depth-1" alt="">
         </div>
-        <div class="col l6 m6 s12">
-          <h4 style="font-family: 'Abel', sans-serif;">Vivir en el Residencial</h4>
-          <h5 style="font-family: 'Abel', sans-serif;">
-            Significa aprovechar un espacio de bienestar pensando en cada miembro de la familia, sus necesidades, 
-            gustos y talentos.
+        <div class="col l6 m6 s12" align="" style="padding-left: 3%;">
+          <h4 style="font-family: 'Merriweather', serif; color: #595454; line-height: 250%; font-size: 38px;">Vivir en el Residencial</h4>
+          <h5 style="font-family: 'Abel', sans-serif; line-height: 150%; font-size: 25px;" align="justify">
+            Significa aprovechar un espacio de bienestar pensando en cada miembro de la familia, sus necesidades, gustos y talentos. <br> 
             Es un lugar que escogí para sembrar un futuro en dónde nazcan sueños y crezcan mi hogar y mi familia.
           </h5>
         </div>
       </div>
     </div>
 
-    <div class="row"  style="background-color: #fff; padding-top: 100px; padding-bottom: 100px">
+    <div class="row"  style="background-color: #fff; padding-top: 50px; padding-bottom: 50px">
       <div class="container">
         <div class="col l6 m6 s12">
-          <h4 style="font-family: 'Abel', sans-serif;">Exclusividad</h4>
-          <h5 style="font-family: 'Abel', sans-serif;">
+          <h4 style="font-family: 'Merriweather', serif; color: #595454; line-height: 250%; font-size: 38px;">Exclusividad</h4>
+          <h5 style="font-family: 'Abel', sans-serif; line-height: 150%; font-size: 25px;" align="justify">
             Residencial Polo Club El Marqués es el primer residencial Country Club en su tipo que comprende dos canchas de polo, viñedos, canchas de tenis, canchas de padel. Esto con la intención de tener una calidad de vida por encima de cualquier fraccionamiento.
           </h5>
         </div>
@@ -110,14 +133,14 @@
       </div>
     </div>
 
-    <div class="row"  style="background-color:  rgba(255,246,229,0.74); padding-top: 100px; padding-bottom: 100px">
+    <div class="row"  style="background-color:  rgba(255,246,229,0.74); padding-top: 50px; padding-bottom: 50px">
       <div class="container">
         <div class="col l6 m6 s12">
           <img src="img/cerca.jpg" class="responsive-img marco wow slideInLeft z-depth-1" alt="">
         </div>
         <div class="col l6 m6 s12">
-          <h4 style="font-family: 'Abel', sans-serif;">Cerca de todo</h4>
-          <h5 style="font-family: 'Abel', sans-serif;">
+          <h4 style="font-family: 'Merriweather', serif; color: #595454; line-height: 250%; font-size: 38px;">Cerca de todo</h4>
+          <h5 style="font-family: 'Abel', sans-serif; line-height: 150%; font-size: 25px;" align="justify">
             Es un lugar donde se conjugan la armonía, adrenalina y lo cotidiano se vive de manera extraordinaria, vivir en polo club es poder vivir con todas las comodidades, servicios, seguridad y tranquilidad en un entorno natural a tan sólo 20 minutos de todo.
           </h5>
         </div>
@@ -126,7 +149,7 @@
 
     <div id="amenidades" class="row">
       <div id="amenidadescontent" class="container center">
-        <b><h4 style="color: #618f23">Amenidades en Residencial Polo Club El Marqués</h4></b><br>
+        <h4 style="color: #618f23; font-size: 38px; line-height:200%;"><b>Amenidades en Residencial Polo Club El Marqués </b></h4><br>
 
         <div class="containeramenidades">
           <div class="cardamenidades">
@@ -255,7 +278,7 @@
 
     <div id="eventos" class="row">
       <div id="eventoscontent" class="container center">
-        <h3>Eventos y Actividades Polo Club Querétaro</h3>
+        <h3 style="font-size: 38px;">Eventos y Actividades Polo Club Querétaro</h3>
         <br>
 
         <div class="col s12 m6">
@@ -297,19 +320,20 @@
     <div id="venta" class="row">
 
       <div class="container">
-        <form action="" class="col s12 m6 push-m4">
-          <h5 class="col s12 m6 push-m7 white-text">Terrenos en venta</h4>
+        <form action="" class="col s12 m6 push-m5">
+          <h5 class="col s12 m6 push-m8 white-text" style="font-family: 'Abel', sans-serif; line-height: 200% font-size:40px;">Terrenos en venta</h4>
+            <br><br><br><br>  
+            <input type="text" class="col s8 m4 push-m8" style="background: white; font-size: 12px" placeholder="&nbsp;&nbsp;&nbsp; Nombre Completo">
             <br><br><br>
-            <input type="text" class="col s8 m4 push-m7" style="background: white; font-size: 12px" placeholder="Nombre completo">
+            <input type="text" class="col s8 m4 push-m8" style="background: white; font-size: 12px" placeholder="&nbsp;&nbsp;&nbsp; Email">
             <br><br><br>
-            <input type="text" class="col s8 m4 push-m7" style="background: white; font-size: 12px" placeholder="Email">
+            <input type="text" class="col s8 m4 push-m8" style="background: white; font-size: 12px" placeholder="&nbsp;&nbsp;&nbsp; Celular">
             <br><br><br>
-            <input type="text" class="col s8 m4 push-m7" style="background: white; font-size: 12px" placeholder="Celular">
-            <br><br><br>
-            <textarea type="text" class="col s12 m4 push-m7 materialize-textarea" style="background: white; font-size: 12px;" rows="8" placeholder="Mensaje"></textarea>
+            <textarea type="text" class="col s12 m4 push-m8 materialize-textarea" style="background: white; font-size: 12px;" rows="8" placeholder="Mensaje"></textarea>
+
             <br><br><br>
 
-            <input type="submit" class="btn-large col s8 m4 push-m7"></input>
+            <input type="submit" class="btn-large col s8 m4 push-m8"></input>
 
           </form> 
 
@@ -370,6 +394,10 @@
   });
  
 });
+       $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
     </script>
 
   </body>

@@ -142,7 +142,7 @@ $empezar_desde = ($pagina-1) * $cantidad_resultados_por_pagina;
 //Nota: X = $total_paginas
 					for ($i=1; $i<=$total_paginas; $i++) {
 	//En el bucle, muestra la paginación
-						echo "<li class='active red darken-3'><a href='?pagina=".$i."'>".$i."</a></li> ";
+						echo "<li class='active light-green darken-1'><a href='?pagina=".$i."'>".$i."</a></li> ";  
 
 					}; ?>
 					<li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
